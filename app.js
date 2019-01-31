@@ -2,7 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 
-const dev_db_url = 'mongodb+srv://someuser:ABCD1234@product-cluster-diz8n.gcp.mongodb.net/product'
+const dev_db_url = 'mongodb+srv://someuserABCD1234:@product-cluster-diz8n.gcp.mongodb.net/admin'
 const mongoDB = process.env.MONGODB_URI || dev_db_url
 mongoose.connect(mongoDB, {useNewUrlParser: true})
 mongoose.Promise = global.Promise

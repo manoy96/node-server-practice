@@ -9,10 +9,11 @@ exports.product_create = (req, res, next) => {
         name: req.body.name,
         price: req.body.price,
     })
+    
        product.save((err) => {
-           if(err) {
+           if (err) {
                return next(err)
            }
-           HTMLTableRowElement.send('Product created successfully!')
+           res.send('Product created successfully!')
        }) 
 }
