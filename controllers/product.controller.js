@@ -9,21 +9,40 @@ exports.product_create = (req, res, next) => {
         name: req.body.name,
         price: req.body.price,
     })
-    
-       product.save((err) => {
-           if (err) {
-               return next(err)
-           }
-           res.send('Product created successfully!')
-       }) 
+
+    product.save((err) => {
+        if (err) {
+            return next(err)
+        }
+        res.send('Product created successfully!')
+    })
 }
 
-exports.product_update = (req, res, next) => {
-    Product.findByIdAndUpdate(req.params.id, { $set: req.body},
-        (err, product) => {
-        if (err) return next(err)
-        res.send('Product updated')
+exports.pokemon_create = (req, res, next) => {
+    let pokemon = new pokemon({
+        name: req.body.name,
+        url: req.body.url,
     })
+
+    pokemon.save(function (err) {
+        if (err) {
+            return next(err)
+        }
+        res.send('Pokemon created!')
+    })
+}
+
+
+exports.product_update = (req, res, next) => {
+    Product.findByIdAndUpdate(
+        req.params.id, {
+            $set: req.body
+        },
+        (err, product) => {
+            if (err) return next(err)
+            res.send('Product updated')
+        },
+    )
 }
 
 exports.product_delete = (req, res, next) => {
