@@ -9,7 +9,7 @@ const pokemon_controller = require('../controllers/pokemon.controller')
 
 router.get('/test', pokemon_controller.test)
 
-router.post('/pokemon', pokemon_controller.product_create)
+router.post('/pokemon', pokemon_controller.pokemon_create)
 
 // router.put('/:id/update', product_controller.product_update) 
 

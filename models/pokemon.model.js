@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 mongoose.set('useFindAndModify', false)
-const Scema = mongoose.Schema
+const Schema = mongoose.Schema
 
 const PokemonSchema = new Schema({
     name: { type: String, required: true},
