@@ -4,7 +4,8 @@
   "description": "my node server practice",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "populate": "node seed/populate.js"
   },
   "author": "Manuel Espinoza",
   "license": "ISC",
@@ -14,6 +15,7 @@
     "mongoose": "^5.4.6"
   },
   "devDependencies": {
-    "node-fetch": "^2.3.0"
+    "node-fetch": "^2.3.0",
+    "nodemon": "^1.18.10"
   }
 }
