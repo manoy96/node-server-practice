@@ -32,23 +32,23 @@
 
 // const fetch = require('node-fetch')
 
-// fetch('https://api.nasa.gov/planetary/apod?api_key=diU3YOSoUyfoY6PSV2zqJn9bEZ1geyaJ7J61cDy1&start_date=2019-01-20&end_date=2019-02-14')
+// fetch('https://images-api.nasa.gov/search?page=3&q=apollo+11...')
 //   .then(res => res.json())
 //   .then(myJson => {
-//     const nasaArray = myJson.copyright
-//     nasaArray.forEach(apod => {
-//       let nurl = apod.url
+//     const nasaArray = myJson.collection
+//     nasaArray.forEach(apollo => {
+//       let nurl = apollo.items
 //       fetch(nurl)
 //           .then(result => result.json())
-//           .then(fullApod => {
-//             return newPokemon = {
-//               height: fullApod.height,
-//               weight: fullApod.weight,
-//               name: fullApod.name,
-//               url: purl,
-//               sprite: fullApod.sprites.front_shiny,
-//             }
-//           })
+//           // .then(fullApollo => {
+//           //   return newApollo = {
+//           //     height: fullApollo.height,
+//           //     weight: fullApollo.weight,
+//           //     name: fullApollo.name,
+//           //     url: purl,
+//           //     sprite: fullApollo.sprites.front_shiny,
+//           //   }
+//           // })
 //       .then(newOne => {
 //         console.log(newOne)
 //         postData(`http://localhost:5775/pokemon/pokemon`, newOne)
