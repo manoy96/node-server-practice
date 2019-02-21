@@ -72,6 +72,11 @@ const Product = require('../models/product.model')
 const Pokemon = require('../models/pokemon.model')
 
 // simple version with no validation or sanitation
+exports.all = (req, res) => {
+  Product.find({})
+  .then( (allProduct) => res.json(allProduct))
+}
+
 exports.test = (req, res) => {
   res.send('Greetings from the test controller!')
 }

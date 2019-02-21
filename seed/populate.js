@@ -78,7 +78,7 @@ fetch('https://images-api.nasa.gov/search?q=apollo+11&media_type=image')
             })
             .then(newOne => {
                console.log(newOne)
-               postData(`http://localhost:5775/pokemon/pokemon`, newOne)
+               postData(`http://localhost:5775/nasa`, newOne)
                   .then(data => console.log(data))
                   .catch(error => console.error(error))
             })
