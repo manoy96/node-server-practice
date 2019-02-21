@@ -71,8 +71,8 @@ fetch('https://images-api.nasa.gov/search?q=apollo+11&media_type=image')
             .then(myItems => myItems.json())
             .then(fullItem => {
                return newItem = {
-                  title: fullItem.title
-                  date: fullItem.date_created
+                  title: fullItem.title,
+                  date: fullItem.date_created,
                   description: fullItem.description
                }
             })
