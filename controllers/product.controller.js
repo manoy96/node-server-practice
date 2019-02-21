@@ -81,6 +81,16 @@ exports.test = (req, res) => {
   res.send('Greetings from the test controller!')
 }
 
+exports.find_name = (req, res, next) => {
+  const rocketName = req.params.name;
+  Product.find({
+      name: rocketName
+    })
+    .then(result => {
+      res.send(result)
+    })
+}
+
 exports.product_create = (req, res, next) => {
   let product = new Product({
     name: req.body.name,

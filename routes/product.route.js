@@ -35,6 +35,8 @@ router.get('/all', product_controller.all)
 
 router.get('/test', product_controller.test)
 
+router.get('/name/:rocketName', product_controller.find_name)
+
 router.post('/create', product_controller.product_create)
 
 router.put('/:id/update', product_controller.product_update)
