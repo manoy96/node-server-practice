@@ -35,7 +35,9 @@ router.get('/all', product_controller.all)
 
 router.get('/test', product_controller.test)
 
-router.get('/find/:name', product_controller.find_name)
+router.get('/name/:name', product_controller.find_location)
+
+router.get('/location/:location', product_controller.find_location)
 
 router.post('/create', product_controller.product_create)
 

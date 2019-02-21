@@ -91,6 +91,16 @@ exports.find_name = (req, res, next) => {
     })
 }
 
+exports.find_location = (req, res, next) => {
+  const rocketLocation = req.params.location;
+  Product.find({
+      location: rocketLocation
+    })
+    .then(result => {
+      res.send(result)
+    })
+}
+
 exports.product_create = (req, res, next) => {
   let product = new Product({
     name: req.body.name,
