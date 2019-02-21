@@ -23,6 +23,7 @@ const Schema = mongoose.Schema
 const ProductSchema = new Schema({
     name: { type: String, required: true, max: 100 },
     price: {type: Number, required: true},
+    location: { type: String, required: true, max: 100 },
 })
 
 module.exports = mongoose.model('Product', ProductSchema)
