@@ -26,9 +26,9 @@ const ProductSchema = new Schema({
         required: true,
         max: 100,
     },
-    location: {
+    country: {
         type: String,
-        // required: false,
+        required: true,
         max: 100,
     },
     price: {

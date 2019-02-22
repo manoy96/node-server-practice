@@ -92,9 +92,9 @@ exports.find_name = (req, res, next) => {
 }
 
 exports.find_location = (req, res, next) => {
-  const rocketLocation = req.params.location;
+  const rocketLocation = req.params.country;
   Product.find({
-      location: rocketLocation
+      country: rocketLocation
     })
     .then(result => {
       res.send(result)
