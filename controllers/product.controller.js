@@ -105,6 +105,7 @@ exports.product_create = (req, res, next) => {
   let product = new Product({
     name: req.body.name,
     price: req.body.price,
+    country: req.body.country,
   })
 
   product.save(function(err) {
