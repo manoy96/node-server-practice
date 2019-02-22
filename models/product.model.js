@@ -24,16 +24,16 @@ const ProductSchema = new Schema({
     name: { 
         type: String, 
         required: true, 
-        max: 100 
+        max: 100,
     },
     price: {
         type: Number, 
-        required: true
+        required: true,
     },
     location: { 
         type: String, 
-        required: 'please enter location', 
-        max: 100 
+        required: false, 
+        max: 100,
     },
 })
 
