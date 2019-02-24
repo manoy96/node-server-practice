@@ -31,9 +31,7 @@ const router = express.Router()
 
 const product_controller = require('../controllers/product.controller')
 
-router.get('/', product_controller.all)
-
-// router.get('/all', product_controller.all)
+router.get('/all', product_controller.all)
 
 router.get('/test', product_controller.test)
 
