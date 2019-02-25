@@ -23,3 +23,7 @@ Company: "Company Name"
 Country "Country of Origin"
 
 ![Postman reference](img/postman.png)
+
+### Update Rocket Data Via Postman
+
+https://sleepy-taiga-70117.herokuapp.com/products/<b>:productID</b>/update
