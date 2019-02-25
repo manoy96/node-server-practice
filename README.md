@@ -12,24 +12,9 @@
   * "/name/:name" - Lets you search for a rocket by name
   * "/country/:country" - Lets you filter data by country
 
-### Adding a New Rocket
+### Adding a New Rocket Via Postman
 
-`name: {
-        type: String,
-        required: true,
-        max: 100,
-    },
-    country: {
-        type: String,
-        required: true,
-        max: 100,
-    },
-    price: {
-        type: Number,
-        required: true,
-    },
-    company: {
-        type: String,
-        required: true,
-        max: 100,
-    }`
+Name: "Rocket Name" <enter>
+Price: "Rocket Price"<enter>
+Company: "Company Name"<enter>
+Country "Country of Origin"
