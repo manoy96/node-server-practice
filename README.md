@@ -26,4 +26,8 @@ Country "Country of Origin"
 
 ### Update Rocket Data Via Postman
 
-https://sleepy-taiga-70117.herokuapp.com/products/<b>:productID</b>/update
+"https://sleepy-taiga-70117.herokuapp.com/products/<b>:productID</b>/update"
+
+### Delete Rocket Data Via Postman
+
+"https://sleepy-taiga-70117.herokuapp.com/products/<b>:productID</b>/update"
