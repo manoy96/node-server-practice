@@ -12,7 +12,7 @@
   * "/name/:name" - Lets you search for a rocket by name
   * "/country/:country" - Lets you filter data by country
 
-### Adding a New Rocket Via Postman
+### POST a New Rocket Via Postman
 
 Name: "Rocket Name" 
 
@@ -24,10 +24,10 @@ Country "Country of Origin"
 
 ![Postman reference](img/postman.png)
 
-### Update Rocket Data Via Postman
+### UPDATE Rocket Data Via Postman
 
 "https://sleepy-taiga-70117.herokuapp.com/products/<b>:productID</b>/update"
 
-### Delete Rocket Data Via Postman
+### DELETE Rocket Data Via Postman
 
-"https://sleepy-taiga-70117.herokuapp.com/products/<b>:productID</b>/update"
+"https://sleepy-taiga-70117.herokuapp.com/products/<b>:productID</b>/delete"
