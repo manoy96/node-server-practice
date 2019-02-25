@@ -21,3 +21,5 @@ Price: "Rocket Price"
 Company: "Company Name"
 
 Country "Country of Origin"
+
+![Postman reference](img/postman.png)
