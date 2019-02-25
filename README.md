@@ -10,4 +10,26 @@
 
   * "/all" -  gets all the items in the database
   * "/name/:name" - Lets you search for a rocket by name
-  * "/loca
+  * "/country/:country" - Lets you filter data by country
+
+### Adding a New Rocket
+
+`name: {
+        type: String,
+        required: true,
+        max: 100,
+    },
+    country: {
+        type: String,
+        required: true,
+        max: 100,
+    },
+    price: {
+        type: Number,
+        required: true,
+    },
+    company: {
+        type: String,
+        required: true,
+        max: 100,
+    }`
