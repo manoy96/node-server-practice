@@ -106,6 +106,7 @@ exports.product_create = (req, res, next) => {
     name: req.body.name,
     price: req.body.price,
     country: req.body.country,
+    company: req.body.company
   })
 
   product.save(function(err) {
