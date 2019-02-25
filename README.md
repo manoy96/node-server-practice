@@ -14,7 +14,10 @@
 
 ### Adding a New Rocket Via Postman
 
-Name: "Rocket Name" <enter>
-Price: "Rocket Price"<enter>
-Company: "Company Name"<enter>
+Name: "Rocket Name" 
+
+Price: "Rocket Price"
+
+Company: "Company Name"
+
 Country "Country of Origin"
