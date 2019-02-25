@@ -91,7 +91,7 @@ exports.find_name = (req, res, next) => {
     })
 }
 
-exports.find_location = (req, res, next) => {
+exports.find_country = (req, res, next) => {
   const rocketLocation = req.params.country;
   Product.find({
       country: rocketLocation

@@ -9,7 +9,7 @@ router.get('/test', product_controller.test)
 
 router.get('/name/:name', product_controller.find_name)
 
-router.get('/location/:location', product_controller.find_location)
+router.get('/country/:country', product_controller.find_country)
 
 router.post('/create', product_controller.product_create)
 
